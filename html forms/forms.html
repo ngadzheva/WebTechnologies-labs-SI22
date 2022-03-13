@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8" />
+
+        <title>Forms Demo</title>
+    </head>
+
+    <body>
+        <form method="POST">
+            <fieldset>
+                <legend>Профил</legend>
+                <label for="first-name">Име: </label>
+                <input id="first-name" type="text" placeholder="Име" name="first-name" required autofocus />
+                <label for="password">Пароли: </label>
+                <input id="password" type="password" name="password" pattern="[A-Za-z0-9]{5,10}" />
+                <label for="email">Имейл: </label>
+                <input id="email" type="email" placeholder="name@example.com" name="email" />
+                <label>Disabled</label>
+                <input type="text" disabled />
+            </fieldset>
+            <fieldset>
+                <legend>Обща информация</legend>
+                <label>Пол</label>
+                <br />
+                <label for="female">Жена</label>
+                <input id="female" type="radio" name="gender" value="F" />
+                <label for="male">Мъж</label>
+                <input id="male" type="radio" name="gender" value="M" />
+                <br />
+
+                <label>Образование</label>
+                <br />
+                <label for="high-school">Средно</label>
+                <input id="high-school" type="checkbox" name="education" value="High school" />
+                <label for="bachelor">Бакалавър</label>
+                <input id="bachelor" type="checkbox" name="education" value="Bachelor" />
+                <label for="master">Магистър</label>
+                <input id="master" type="checkbox" name="education" value="Master" />
+                <br />
+
+                <textarea name="comment" placeholder="Въведи текст"></textarea>
+                <br />
+
+                <label>Местоживеене</label>
+                <select name="city">
+                    <optgroup label="Държава">
+                        <option value="BG">България</option>
+                        <option value="USA">САЩ</option>
+                        <option value="CAN">Канада</option>
+                    </optgroup>
+
+                    <optgroup label="Градове">
+                        <option value="Sofia">София</option>
+                        <option value="New York">Ню Йорк</option>
+                        <option value="Ontario">Онтарио</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+            <!-- <button>Изпрати</button> -->
+            <input type="submit" value="Изпрати" />
+        </form>
+    </body>
+</html>
