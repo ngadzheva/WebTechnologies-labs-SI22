@@ -1,0 +1,107 @@
+@import "css-reset.css";
+
+h2 {
+    color: red;
+}
+
+#article1 {
+    border: 3px solid black;
+    display: block;
+    padding: 20px;
+    margin: 30px;
+    position: relative;
+    width: 500px;
+}
+
+nav {
+    position: fixed;
+}
+
+h1 {
+    /* visibility: hidden; */
+    display: none;
+}
+
+.author.copyright {
+    width: 300px;
+    float: right;
+}
+
+#article1:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+#article1 div {
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    border: 1px dashed red;
+}
+
+.author {
+    text-transform: uppercase;
+}
+
+article, section {
+    width: 700px;
+    border: 1px dotted green;
+}
+
+#article2 {
+    position: relative;
+    top: 60px;
+    left: 100px;
+}
+
+#article3 {
+    position: absolute;
+    top: 50px;
+    left: 200px;
+}
+
+p.copyright {
+    color: #8fcfcf;
+    font-size: 24px;
+}
+
+article h2 {
+    color: orange;
+}
+
+article > h2 {
+    color: green;
+}
+
+h2 + p {
+    font-style: italic;
+}
+
+h2 ~ p {
+    font-weight: bold;
+}
+
+p:last-child {
+    text-decoration: underline;
+}
+
+p:nth-child(2) {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section:first-of-type {
+    background: yellow;
+}
+
+section:last-of-type {
+    background: green;
+}
+
+section:nth-of-type(2) {
+    background: blue;
+}
+
+a {
+    text-decoration: none;
+}
